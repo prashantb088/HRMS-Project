@@ -1,3 +1,10 @@
+/**
+ * The Operation of HR Management System to add Employee And Remove Employee from DataBase
+ * Performing Salary Hike of One or All Employees
+ * By Prashant Bansal
+ *
+ */
+
 package com.slot2jdbc;
 import java.sql.*;
 public class employeedao {
@@ -23,15 +30,15 @@ public class employeedao {
 					String query2 = "insert into employee (ename,edomain,edesignation,elocation,esal,ephone) values(?,?,?,?,?,?)"; 
 					PreparedStatement pst = con.prepareStatement(query2);
 				   
-					pst.setString(1,emp.ename);
-				    pst.setString(2,emp.edomain);
-				    pst.setString(3,emp.edesignation);
-				    pst.setString(4,emp.elocation);
-				    pst.setInt(5,emp.esal);
-				    pst.setString(6, emp.ephone);
-				    int count = pst.executeUpdate();
+				       pst.setString(1,emp.ename);
+				       pst.setString(2,emp.edomain);
+				       pst.setString(3,emp.edesignation);
+				       pst.setString(4,emp.elocation);
+				       pst.setInt(5,emp.esal);
+				       pst.setString(6, emp.ephone);
+				       int count = pst.executeUpdate();
 				    
-				    return count;
+				       return count;
 				}
 				
 				}
@@ -89,9 +96,5 @@ public class employeedao {
 					return 1;
 				}
 			    
-				
-				
-			
-	
-}
+				}
 
