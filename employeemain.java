@@ -1,3 +1,11 @@
+/**
+ * The Operation of HR Management System to add Employee And Remove Employee from DataBase
+ * Performing Salary Hike of One or All Employees
+ * By Prashant Bansal
+ *
+ */
+
+
 package com.slot2jdbc;
 import java.util.Scanner;
 
